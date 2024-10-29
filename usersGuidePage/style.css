@@ -19,7 +19,6 @@ html {
   --moreWhite: rgba(255, 255, 255, 1);
   --footerFontCol: rgba(226, 228, 233, 1);
   --footerBg: rgba(26, 40, 78, 1);
-  --fontPurple: rgba(131, 134, 150, 1);
 
   --sm14: 1.4rem;
   --font16: 1.6rem;
@@ -98,96 +97,232 @@ a {
 }
 
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: rgba(250, 250, 250, 1);
+  background-color: var(--faintPurple2);
   width: 100vw;
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 15.6rem;
+  padding-bottom: 16.2rem;
 }
 main {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  width: 100vw;
-  height: 78rem;
-  background-color: var(--skyBlue);
+  width: 80%;
+  height: 43.4rem;
+
+  background-color: var(--faintPurple);
+  border-radius: 1rem;
+  margin-top: 12.7rem;
 }
-main .leftDiv {
-  width: 65.1rem;
-  height: 57.618rem;
+main .leftdiv {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: start;
-  gap: 2rem;
+  gap: 1.5rem;
+  width: 50rem;
+}
+main h1 {
+  color: var(--boldBlack);
+  font-size: var(--font56);
+}
+main p {
+  color: var(--faintBlack);
+  font-size: var(--font18);
+}
+main .leftdiv button {
+  width: 17.4rem;
+  height: 4.8rem;
+  background-color: var(--purple);
+  color: var(--white);
+  /* padding: 1rem; */
+  border: none;
+
+  border-radius: 0.6rem;
+}
+main .rightdiv {
+  width: 63.3rem;
+}
+main .rightdiv img {
+  width: 100%;
 }
 
-main .leftDiv h1 {
-  font-size: 5.6rem;
+.section1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  height: 50rem;
+  border-radius: 1rem;
 }
-main .leftDiv p {
-  font-size: 1.8rem;
+.section1 .leftdiv {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: start;
+  gap: 1.5rem;
+  width: 50%;
 }
 
-main .leftDiv .btn {
+.section1 .leftdiv .one h1 {
+  width: 8rem;
+  height: 8rem;
+  font-size: 4rem;
+  background-color: var(--purple);
+  color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.section1 .leftdiv .writeUp {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.5rem;
+  width: 40%;
+}
+.section1 h1 {
+  color: var(--boldBlack);
+  font-size: var(--font36);
+}
+.section1 p {
+  color: var(--faintBlack);
+  font-size: var(--font18);
+}
+.section1 ol {
+  color: var(--faintBlack);
+  font-size: var(--font18);
+}
+.section1 .leftdiv button {
+  background-color: var(--purple);
+  color: var(--white);
+  padding: 1rem;
+  border: none;
+  border-radius: 0.6rem;
+}
+.section1 .rightdiv {
+  width: 50rem;
+  height: 50rem;
+  background-color: var(--skyBlue);
+  border-radius: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: var(--font16);
-  gap: 1.9rem;
 }
-main .leftDiv .btn button {
+.section1 .rightdiv img {
+  width: 42.5rem;
+  height: 40.1rem;
+}
+
+.article1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  height: 43.4rem;
+  background-color: var(--darkSkyBlue);
+  border-radius: 1rem;
+  margin-top: 12.7rem;
+}
+.article1 .leftdiv {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.5rem;
+  width: 50rem;
+}
+.article1 h1 {
+  color: var(--white);
+  font-size: var(--font56);
+}
+.article1 p {
+  color: var(--faintPurple);
+  font-size: var(--font18);
+}
+
+.article1 .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  font-size: var(--font16);
+}
+.article1 .leftdiv button {
   width: 17.4rem;
   height: 4.8rem;
-  border-radius: 1.2rem;
+  color: var(--white);
+  /* padding: 1rem; */
+  border-radius: 0.6rem;
 }
 
-main .leftDiv .btn1 {
+.btn1 {
   background-color: var(--purple);
   border: none;
-  color: var(--white);
 }
-main .leftDiv .btn2 {
+.btn2 {
   background: none;
-  border: 2px solid var(--boldBlack);
-  color: var(--boldBlack);
+  border: 2px solid var(--white);
 }
-
-main .imgCont {
-  width: 65.1rem;
-  height: 57.618rem;
+.article1 .rightdiv {
+  width: 43.4rem;
+  height: 43.4rem;
 }
-main img {
+.article1 .rightdiv img {
   width: 100%;
   height: 100%;
 }
-.section1 {
+
+.article2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55rem;
+  height: 55rem;
+  gap: 2.4rem;
+}
+.article2 .div1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  gap: 2.5rem;
+  text-align: center;
+  background-color: var(--white);
+  border-radius: 2.4rem;
+  width: 55rem;
+  height: 55rem;
 }
-
-.section1 .writeUp {
-  display: flex;
-
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.article2 .imgCont {
+  width: 41.8rem;
+  height: 27.9rem;
 }
-.section1 .writeUp h1 {
-  font-size: var(--font48);
+.article2 .imgCont img {
+  width: 100%;
+  height: 100%;
+}
+.div1 h2 {
+  font-size: var(--font32);
+  color: var(--boldBlack);
+}
+.div1 p {
+  font-size: var(--font16);
   color: var(--boldBlack);
 }
 
-.section1 .writeUp p {
-  font-size: var(--font18);
-  color: var(--fontPurple);
+.div1 .arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border: navajowhite;
+  background: none;
+  cursor: pointer;
 }
 
-/* footer////////////////////////////////////////////////////////////////// */
 footer {
   display: flex;
   flex-direction: column;
