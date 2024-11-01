@@ -1,0 +1,381 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --purple: rgba(101, 31, 255, 1);
+  --faintBlack: rgba(92, 95, 110, 1);
+  --boldBlack: rgba(11, 13, 14, 1);
+  --white: rgba(255, 255, 255, 1);
+  --faintPurple: rgba(236, 236, 254, 1);
+  --faintPurple2: rgb(244, 244, 252);
+  --skyBlue: rgba(224, 247, 250, 1);
+  --darkSkyBlue: rgba(0, 229, 255, 1);
+  --moreWhite: rgba(255, 255, 255, 1);
+  --footerFontCol: rgba(226, 228, 233, 1);
+  --footerBg: rgba(26, 40, 78, 1);
+  --fontPurple: rgba(131, 134, 150, 1);
+  --codeContBg: rgba(26, 40, 78, 1);
+
+  --sm14: 1.4rem;
+  --font16: 1.6rem;
+  --font18: 1.8rem;
+  --font32: 3.2rem;
+  --font36: 3.6rem;
+  --font48: 4.8rem;
+  --font56: 5.6rem;
+}
+header {
+  position: relative;
+  width: 100vw;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--white);
+  width: 100%;
+  height: 6.4rem;
+  font-size: var(--font16);
+}
+.logoCont {
+  width: 16.9rem;
+  height: 4rem;
+}
+.logoCont img {
+  width: 100%;
+  height: 100%;
+}
+
+.ul1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 40vw;
+}
+nav li,
+a {
+  list-style: none;
+  text-decoration: none;
+  color: var(--faintBlack);
+  /* color: red; */
+}
+
+.ul2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.sign {
+  width: 11.2rem;
+  height: 4.2rem;
+  border: 2px solid black;
+  /* padding: 0.5rem 1.5rem; */
+  border-radius: 0.6rem;
+  font-weight: bold;
+  color: var(--boldBlack);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.create {
+  width: 19.4rem;
+  height: 4.2rem;
+  background-color: var(--purple);
+  padding: 0.5rem 1rem;
+  color: white;
+  border-radius: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  gap: 5rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 80rem;
+  background-color: var(--faintPurple);
+  gap: 5rem;
+}
+main h1 {
+  font-size: 5.6rem;
+  color: var(--boldBlack);
+}
+main h1 b {
+  color: var(--purple);
+}
+main p {
+  font-size: 2rem;
+}
+
+main .btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55.6rem;
+  height: 6.4rem;
+  gap: 2rem;
+}
+main .btns div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18rem;
+  height: 100%;
+  gap: 1rem;
+  background: var(--white);
+  border-radius: 1.2rem;
+  font-size: 1.3rem;
+  color: var(--faintBlack);
+}
+main .btns div span b {
+  font-size: 1.8rem;
+
+  font-weight: 800;
+  color: var(--boldBlack);
+}
+
+main .imgCont {
+  width: 102.889rem;
+  height: 59.1rem;
+  margin-bottom: -30rem;
+}
+main .imgCont img {
+  width: 100%;
+  height: 100%;
+}
+
+.divs {
+  margin-top: 30rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+}
+.divs .div1 {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 2.4rem;
+  width: 35.9rem;
+  height: 30.4rem;
+  border: 1px solid black;
+  padding: 5rem;
+  gap: 2rem;
+}
+.divs .div1 div {
+  background-color: var(--faintPurple);
+  width: 6.4rem;
+  height: 6.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+}
+
+.divs .div1 h5 {
+  font-size: 2.4rem;
+  color: var(--boldBlack);
+}
+.divs .div1 p {
+  font-size: var(--font16);
+}
+
+.section1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3.8rem;
+  margin-top: 10rem;
+}
+.section1 h1 {
+  font-size: 4.8rem;
+}
+.section1 p {
+  font-size: 1.8rem;
+  color: var(--faintBlack);
+  width: 95.5rem;
+}
+
+.section1 div {
+  width: 94.7rem;
+  height: 51.1rem;
+}
+.section1 div img {
+  width: 100%;
+  height: 100%;
+}
+
+.section2 {
+  margin-top: 30rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+}
+.section2 .div1 {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 2.4rem;
+  width: 35.9rem;
+  height: 30.4rem;
+  border: 1px solid black;
+  padding: 5rem;
+  gap: 2rem;
+}
+.section2 .div1 div {
+  background-color: var(--faintPurple);
+  width: 6.4rem;
+  height: 6.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+}
+
+.section2 .div1 h5 {
+  font-size: 2.4rem;
+  color: var(--boldBlack);
+}
+.section2 .div1 p {
+  font-size: var(--font16);
+}
+
+.section3 {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  background-color: var(--purple);
+  width: 100vw;
+  height: 64.5rem;
+  gap: 8.4rem;
+}
+.section3 .left {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 3rem;
+  padding-bottom: 8rem;
+}
+.section3 h2 {
+  font-size: var(--font48);
+  color: var(--white);
+}
+.section3 p {
+  font-size: var(--font18);
+  color: var(--faintPurple);
+  width: 51.8rem;
+}
+.section3 button {
+  width: 26.5rem;
+  height: 4.8rem;
+  border: none;
+  color: var(--purple);
+  border-radius: 1.2rem;
+}
+.section3 a {
+  color: skyblue;
+}
+
+.section3 .whiteImgCont {
+  width: 62.3rem;
+  height: 52.3rem;
+}
+.section3 .whiteImgCont img {
+  width: 100%;
+  height: 100%;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 45.4rem;
+  background-color: var(--footerBg);
+  padding: 6.4rem 15.6rem 3.2rem 15.7rem;
+  gap: 7.8rem;
+  color: var(--footerFontCol);
+}
+footer a,
+li {
+  list-style: none;
+  color: var(--footerFontCol);
+  font-size: var(--font16);
+}
+footer .topdiv {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+footer .topdiv .div1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 36.4rem;
+  height: 25.9rem;
+  gap: 3.2rem;
+  align-self: flex-start;
+}
+footer .topdiv .div1 h5 {
+  font-size: var(--font16);
+  color: var(--footerFontCol);
+}
+footer .topdiv .div1 p {
+  font-size: var(--font16);
+  color: var(--footerFontCol);
+}
+
+footer .imgCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.div1 ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+}
+footer .bottomDiv {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 1.4rem;
+}
+
+footer .iconCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
